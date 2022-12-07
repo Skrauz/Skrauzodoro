@@ -1,9 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using SkrauzodoroTimer.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+
+// add db context
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+    builder.Configuration.GetConnectionString("DefaultConnection")
+));
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
