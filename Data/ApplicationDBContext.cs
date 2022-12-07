@@ -1,14 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using SkrauzodoroTimer.Models;
 
-namespace SkrauzodoroTimer.Data;
-
-public class ApplicationDbContext : DbContext
+namespace SkrauzodoroTimer.Data
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    public class AppDbContext : DbContext
     {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+            
+        }
 
+        public DbSet<TimeWindow>? TimeWindows { get; set; }
     }
-
-    public DbSet<TimeWindow>? TimeWindows { get; set; }
 }
