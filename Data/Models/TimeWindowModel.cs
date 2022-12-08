@@ -16,6 +16,8 @@ public class TimeWindow
 
     public TimeSpan Length {get; set;}
 
+    public bool IsTracked {get; set;}
+
     // eventually add in pomodoro implementation in an update later
     /* public List<IPomoWindow>? PomoComposition {get; set;} */
 }
