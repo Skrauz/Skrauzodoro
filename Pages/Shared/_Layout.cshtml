@@ -4,15 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SkrauzodoroTimer</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SkrauzodoroTimer.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">SkrauzodoroTimer</a>
+                <a class="navbar-brand" href="https://github.com/Skrauz/SkrauzodoroTimer" style="color: var(--bs-link-color);" target="_blank">SkrauzodoroTimer</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" style="cursor: pointer; color: var(--bs-link-color);"><i class="fa-regular fa-clock"></i> Timer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link" style="cursor: pointer; color: var(--bs-link-color);"><i class="fa-solid fa-chart-column"></i> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor: pointer; color: var(--bs-link-color);"><i class="fa-solid fa-plug"></i> Integrations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="cursor: pointer; color: var(--bs-link-color);"><i class="fa-solid fa-gear"></i> Settings</a>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +43,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container" style="color: var(--bs-link-color);">
             &copy; 2022 - SkrauzodoroTimer - <a href="https://github.com/Skrauz" target="_blank">Github</a>
         </div>
     </footer>
@@ -45,6 +51,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/b483df3b09.js" crossorigin="anonymous"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
