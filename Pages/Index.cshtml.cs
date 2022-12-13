@@ -12,6 +12,9 @@ public class IndexModel : PageModel
         _logger = logger;
     }
 
+    [BindProperty]
+    public TimeSpan Time { get; set; } = TimeSpan.Zero;
+
     public void OnGet()
     {
 
