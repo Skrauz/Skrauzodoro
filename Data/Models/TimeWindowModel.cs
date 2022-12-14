@@ -12,9 +12,9 @@ public class TimeWindow
 
     public DateTime StartTime { get; set; } = DateTime.Now;
 
-    public DateTime EndTime { get; set; }
+    public DateTime? EndTime { get; set; }
 
-    public TimeSpan Length {get; set;}
+    public TimeSpan? Length {get; set;}
 
     public bool IsTracked {get; set;}
 
