@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace SkrauzodoroTimer.Models;
+namespace SkrauzodoroTracker.Models;
 
 public interface IPomoWindow
 {

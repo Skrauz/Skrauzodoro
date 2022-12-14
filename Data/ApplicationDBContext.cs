@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using SkrauzodoroTimer.Models;
+using SkrauzodoroTracker.Models;
 
-namespace SkrauzodoroTimer.Data
+namespace SkrauzodoroTracker.Data
 {
     public class AppDbContext : DbContext
     {
