@@ -14,13 +14,30 @@
             <div class="col-6">
                 <button class="w-100 btn btn-dark"><i class="fa-regular fa-clock"></i> Start Tracking</button>
             </div>
+            @* Another button, import from Todoist *@
         </div>
         <hr>
         @* Tracker clock section *@
         <div class="p-1">
-            <p class="fs-1 fw-bold">@Model.Time</p>
-            <p>Currently Working on:</p>
-            <p class="fs-2">Task Name Here</p>
+            <div class="row">
+                <div class="col-4">
+                    <p>
+                        Started at:
+                    </p>
+                    <p class="fs-4">~</p>
+                </div>
+                <div class="col-4">
+                    <p class="fs-1 fw-bold">@Model.Time</p>
+                </div>
+                <div class="col-4">
+                    <p>
+                        Finished at:
+                    </p>
+                    <p class="fs-4">~</p>
+                </div>
+            </div>
+            <p>Currently working on:</p>
+            <p class="fs-2" id="taskName">~</p>
         </div>
         <hr>
     </div>
