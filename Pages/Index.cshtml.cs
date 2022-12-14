@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SkrauzodoroTimer.Pages;
+namespace SkrauzodoroTracker.Pages;
 
 public class IndexModel : PageModel
 {
@@ -11,6 +11,9 @@ public class IndexModel : PageModel
     {
         _logger = logger;
     }
+
+    [BindProperty]
+    public TimeSpan Time { get; set; } = TimeSpan.Zero;
 
     public void OnGet()
     {

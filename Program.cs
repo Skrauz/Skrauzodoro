@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using SkrauzodoroTimer.Data;
+using SkrauzodoroTracker.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
