@@ -15,6 +15,13 @@ public class IndexModel : PageModel
     [BindProperty]
     public TimeSpan Time { get; set; } = TimeSpan.Zero;
 
+
+    
+    public static void AddTask()
+    {
+
+    }
+
     public void OnGet()
     {
 
