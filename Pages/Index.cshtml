@@ -4,15 +4,17 @@
     ViewData["Title"] = "Skrauzodoro Tracker";
 }
 
+<asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"></asp:ScriptManager>
 <div class="row p-3">
     <div class="col-lg-7 text-center">
         <h2>Tracker</h2>
         <div class="row p-1">
             <div class="col-6">
-                <input class="w-100 form-control" type="text" placeholder="Task Name">
+                <input class="w-100 form-control" id="trackerTaskNameInput" type="text" placeholder="Task Name">
             </div>
             <div class="col-6">
-                <button class="w-100 btn btn-dark"><i class="fa-regular fa-clock"></i> Start Tracking</button>
+                <button class="w-100 btn btn-dark" id="trackerStartButton">
+                    <i class="fa-regular fa-clock"></i> Start Tracking</button>
             </div>
             @* Another button, import from Todoist *@
         </div>
@@ -45,3 +47,6 @@
         <h2>Log</h2>
     </div>
 </div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
